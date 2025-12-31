@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2026 - For My Love RUP ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Snowfall Animation -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+    </div>
+
+    <!-- Landing Page -->
+    <section class="landing-page" id="landing">
+        <div class="landing-content">
+            <h1 class="main-title animate-fade-in">Happy New Year 2026</h1>
+            <p class="subtitle animate-fade-in-delay">For My Beautiful RUP ❤️</p>
+            <div class="heart-animation">💖</div>
+            <button class="start-btn animate-bounce" onclick="openSurpriseBox()">Open Your Surprise 💝</button>
+        </div>
+    </section>
+
+    <!-- Surprise Box Section -->
+    <section class="surprise-section hidden" id="surpriseSection">
+        <div class="surprise-box-container">
+            <div class="surprise-box" id="surpriseBox">
+                <div class="box-lid" id="boxLid">
+                    <div class="ribbon"></div>
+                </div>
+                <div class="box-body" id="boxBody">
+                    <div class="box-content">
+                        <h2 class="box-title">My Dearest Love 💕</h2>
+                        <p class="box-message">You have a special surprise waiting inside...</p>
+                        <button class="open-box-btn" onclick="revealContent()">Please Click Here ❤️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Slideshow Section -->
+    <section class="slideshow-section hidden" id="slideshowSection">
+        <div class="slideshow-container">
+            <h2 class="section-title">You Are My Beautiful Lomdii 💖</h2>
+            <div class="slideshow-wrapper">
+                <div class="slideshow" id="slideshow">
+                    <div class="slide active">
+                        <img src="memory1.jpg" alt="Our Beautiful Memory 1" onerror="handleImageError(this, 1)">
+                        <div class="photo-placeholder" style="display:none;" id="placeholder1">
+                            <p>📸 Memory 1</p>
+                            <p class="photo-note">Photo not found - Please add memory1.jpg</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="memory2.jpg" alt="Our Beautiful Memory 2" onerror="handleImageError(this, 2)">
+                        <div class="photo-placeholder" style="display:none;" id="placeholder2">
+                            <p>📸 Memory 2</p>
+                            <p class="photo-note">Photo not found - Please add memory2.jpg</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="memory3.jpg" alt="Our Beautiful Memory 3" onerror="handleImageError(this, 3)">
+                        <div class="photo-placeholder" style="display:none;" id="placeholder3">
+                            <p>📸 Memory 3</p>
+                            <p class="photo-note">Photo not found - Please add memory3.jpg</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="memory4.jpg" alt="Our Beautiful Memory 4" onerror="handleImageError(this, 4)">
+                        <div class="photo-placeholder" style="display:none;" id="placeholder4">
+                            <p>📸 Memory 4</p>
+                            <p class="photo-note">Photo not found - Please add memory4.jpg</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="memory5.jpg" alt="Our Beautiful Memory 5" onerror="handleImageError(this, 5)">
+                        <div class="photo-placeholder" style="display:none;" id="placeholder5">
+                            <p>📸 Memory 5</p>
+                            <p class="photo-note">Photo not found - Please add memory5.jpg</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slide-btn prev-btn" onclick="changeSlide(-1)">❮</button>
+                <button class="slide-btn next-btn" onclick="changeSlide(1)">❯</button>
+                <div class="slide-indicators">
+                    <span class="indicator active" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                    <span class="indicator" onclick="goToSlide(3)"></span>
+                    <span class="indicator" onclick="goToSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letters Section -->
+    <section class="letters-section hidden" id="lettersSection">
+        <div class="letters-container">
+            <h2 class="section-title">Love Letters from SAHIL 💌</h2>
+            
+            <div class="letter-card">
+                <div class="letter-header">
+                    <span class="letter-date">December 2025</span>
+                    <span class="heart-icon">💕</span>
+                </div>
+                <div class="letter-content">
+                    <h3>My Dearest RUP,</h3>
+                    <p>As we step into 2026, I want you to know how incredibly grateful I am that you came into my life. You didn't just enter my world; you transformed it completely. Every day with you feels like a blessing, and every moment we share becomes a cherished memory.</p>
+                    <p>2025 was special because of YOU. You brought colors to my monochrome world, music to my silent heart, and love to my empty soul. Your smile became my sunshine, your laughter my favorite melody, and your presence my greatest comfort.</p>
+                </div>
+            </div>
+
+            <div class="letter-card">
+                <div class="letter-header">
+                    <span class="letter-date">New Year 2026</span>
+                    <span class="heart-icon">💖</span>
+                </div>
+                <div class="letter-content">
+                    <h3>My Beautiful RUP,</h3>
+                    <p>As the clock strikes midnight and we welcome 2026, I want to promise you something - I promise to love you more with each passing day. I promise to make every moment count, to create more beautiful memories, and to grow our love like a beautiful garden that blooms every single day.</p>
+                    <p>You make my life complete. You make every ordinary day extraordinary. You make me want to be a better person. With you by my side, I know that 2026 will be filled with endless love, countless smiles, and infinite happiness.</p>
+                </div>
+            </div>
+
+            <div class="letter-card">
+                <div class="letter-header">
+                    <span class="letter-date">Forever & Always</span>
+                    <span class="heart-icon">💝</span>
+                </div>
+                <div class="letter-content">
+                    <h3>My Forever Love RUP,</h3>
+                    <p>I want to thank you for being you - for your kindness, your warmth, your beautiful soul. Thank you for choosing me, for loving me, for making me feel special every single day.</p>
+                    <p>As we begin this new year together, I want you to know that my love for you grows stronger with each sunrise and deeper with each sunset. You are not just my girlfriend; you are my best friend, my partner, my everything.</p>
+                    <p class="signature">With all my love,<br><span class="name">SAHIL ❤️</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Year Wishes Section -->
+    <section class="wishes-section hidden" id="wishesSection">
+        <div class="wishes-container">
+            <h2 class="section-title">New Year Wishes for You ✨</h2>
+            <div class="wishes-slideshow">
+                <div class="wish-card active">
+                    <div class="wish-icon">🎉</div>
+                    <h3>May 2026 bring you</h3>
+                    <p>Endless joy, boundless happiness, and infinite reasons to smile every single day!</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">💖</div>
+                    <h3>May our love grow</h3>
+                    <p>Stronger and deeper with each passing day, creating a beautiful story that lasts forever!</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">🌟</div>
+                    <h3>May all your dreams</h3>
+                    <p>Come true, and may you achieve everything your heart desires in this new year!</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">🌺</div>
+                    <h3>May every moment</h3>
+                    <p>We spend together be filled with love, laughter, and beautiful memories!</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">💕</div>
+                    <h3>May our bond</h3>
+                    <p>Grow stronger, our understanding deeper, and our love more beautiful than ever!</p>
+                </div>
+            </div>
+            <div class="wish-indicators">
+                <span class="wish-indicator active" onclick="goToWish(0)"></span>
+                <span class="wish-indicator" onclick="goToWish(1)"></span>
+                <span class="wish-indicator" onclick="goToWish(2)"></span>
+                <span class="wish-indicator" onclick="goToWish(3)"></span>
+                <span class="wish-indicator" onclick="goToWish(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Message Section -->
+    <section class="final-section hidden" id="finalSection">
+        <div class="final-container">
+            <div class="final-content">
+                <h1 class="final-title">Happy New Year 2026</h1>
+                <h2 class="final-subtitle">My Beautiful RUP 💖</h2>
+                <p class="final-message">
+                    You came into my life and made everything beautiful.<br>
+                    You made 2025 the most special year of my life.<br>
+                    And I promise to make every year with you even more special.<br><br>
+                    <strong>I love you more than words can express! ❤️</strong>
+                </p>
+                <div class="names-heart">
+                    <span class="name-display">SAHIL</span>
+                    <span class="heart-between">💕</span>
+                    <span class="name-display">RUP</span>
+                </div>
+                <p class="forever-text">Forever & Always 💝</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Memories Surprise Box Section -->
+    <section class="special-memories-section hidden" id="specialMemoriesSection">
+        <div class="special-memories-container">
+            <h2 class="section-title">My Special Gift For You 💝</h2>
+            <p class="special-intro">A treasure box of our imagination and love...</p>
+            
+            <div class="special-box-wrapper">
+                <div class="special-surprise-box" id="specialSurpriseBox">
+                    <div class="special-box-lid" id="specialBoxLid">
+                        <div class="special-ribbon">💖</div>
+                        <p class="box-label">Open My Special Door</p>
+                    </div>
+                    <div class="special-box-body" id="specialBoxBody">
+                        <button class="open-special-box-btn" onclick="openSpecialMemories()">Please Click Here 💕</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="special-slideshow-wrapper hidden" id="specialPhotosGrid">
+                <div class="special-slideshow" id="specialSlideshow">
+                    <div class="special-slide active">
+                        <img src="special1.jpg" alt="Special Memory 1" onerror="handleSpecialImageError(this, 1)">
+                        <div class="photo-placeholder" style="display:none;" id="specialPlaceholder1">
+                            <p>📸 Special 1</p>
+                            <p class="photo-note">Photo not found - Please add special1.jpg</p>
+                        </div>
+                    </div>
+                    <div class="special-slide">
+                        <img src="special2.jpg" alt="Special Memory 2" onerror="handleSpecialImageError(this, 2)">
+                        <div class="photo-placeholder" style="display:none;" id="specialPlaceholder2">
+                            <p>📸 Special 2</p>
+                            <p class="photo-note">Photo not found - Please add special2.jpg</p>
+                        </div>
+                    </div>
+                    <div class="special-slide">
+                        <img src="special3.jpg" alt="Special Memory 3" onerror="handleSpecialImageError(this, 3)">
+                        <div class="photo-placeholder" style="display:none;" id="specialPlaceholder3">
+                            <p>📸 Special 3</p>
+                            <p class="photo-note">Photo not found - Please add special3.jpg</p>
+                        </div>
+                    </div>
+                    <div class="special-slide">
+                        <img src="special4.jpg" alt="Special Memory 4" onerror="handleSpecialImageError(this, 4)">
+                        <div class="photo-placeholder" style="display:none;" id="specialPlaceholder4">
+                            <p>📸 Special 4</p>
+                            <p class="photo-note">Photo not found - Please add special4.jpg</p>
+                        </div>
+                    </div>
+                    <div class="special-slide">
+                        <img src="special5.jpg" alt="Special Memory 5" onerror="handleSpecialImageError(this, 5)">
+                        <div class="photo-placeholder" style="display:none;" id="specialPlaceholder5">
+                            <p>📸 Special 5</p>
+                            <p class="photo-note">Photo not found - Please add special5.jpg</p>
+                        </div>
+                    </div>
+                    <div class="special-slide">
+                        <img src="special6.jpg" alt="Special Memory 6" onerror="handleSpecialImageError(this, 6)">
+                        <div class="photo-placeholder" style="display:none;" id="specialPlaceholder6">
+                            <p>📸 Special 6</p>
+                            <p class="photo-note">Photo not found - Please add special6.jpg</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slide-btn prev-btn" onclick="changeSpecialSlide(-1)">❮</button>
+                <button class="slide-btn next-btn" onclick="changeSpecialSlide(1)">❯</button>
+                <div class="slide-indicators">
+                    <span class="indicator active" onclick="goToSpecialSlide(0)"></span>
+                    <span class="indicator" onclick="goToSpecialSlide(1)"></span>
+                    <span class="indicator" onclick="goToSpecialSlide(2)"></span>
+                    <span class="indicator" onclick="goToSpecialSlide(3)"></span>
+                    <span class="indicator" onclick="goToSpecialSlide(4)"></span>
+                    <span class="indicator" onclick="goToSpecialSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
